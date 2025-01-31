@@ -1,5 +1,8 @@
-Here you can say lots of fun things about your site.
+💻 Nerd. Tinkerer. Chaos curator.
 
-Maybe say a some things about yourself.
+Here, you’ll find:
+- Tech rambles (Linux, iOS, code).
+- Hobby chaos (motorcycles, DIY experiments).
+- Whatever I’m hyperfixating on this month.
 
-Or maybe what you plan to blog about.
+No fluff. Just passion projects and lessons learned the hard way. Stay curious! 🔍

@@ -1,0 +1,3 @@
+Hello everyone! Let me introduce myself—I’m Gylang Satria Yudha. As some of you may already know, I work as a writer and blogger for Windows Portal Indonesia and Blog Sayugi. However, since Blog Sayugi—originally intended for sharing personal musings—has changed ownership, I no longer have a dedicated space to write outside of winpoin. I also have another blog at gylangsatria.blogspot.com, but due to inactivity and being flagged as suspicious by some anti-malware tools, I’ve had to abandon that blog as well.
+
+Well, welcome to my new blog! I built this blog using GitHub Pages for the first time, and you’ll likely see plenty of experimentation here as I’m learning new things along the way. So, once again, welcome to Gylang Satria’s blog!

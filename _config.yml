@@ -1,26 +1,31 @@
+theme: "minima"
+
+
 title: Gylang's Blog
 author: Gylang Satria 
 description: just a ordinary blogger
+email: sayugiteam@gmail.com
+#url: nanti ini ditambahkan
+
+timezone: Etc/UTC # GitHub uses UTC. This is to force dev environment to match
+future: false # GitHub Pages will publish future posts if this isn't set to false
+
 
 # Email / Social media user names used by the minima theme:
 # All of these are optional and can be removed or commented out
-email: sayugiteam@gmail.com
-twitter_username: gylang_satria
+
+#twitter_username: gylang_satria // udah jarang aktif juga
 github_username: gylangsatria
+instagram_username: gylang_satria
 #linkedin_username: gylangsatriayudha
 #facebook_username: username
 #flickr_username: username
-instagram_username: gylang_satria
 #pinterest_username: username
 #youtube_username: username
 #googleplus_username: +username
-
-#########################################################################################
-######### Nothing below needs to be changed (unless you know what you're doing) #########
-#########################################################################################
-theme: "minima"
-
 rss: rss
+
+
 
 kramdown:
   syntax_highlighter_opts:
@@ -37,6 +42,11 @@ titles_from_headings:
 defaults:
   - scope:
       path: ""
-      type: post
     values:
-      tags: Other
+      image: https://gravatar.com/userimage/129452545/bf957c2fcbd69a06b5d5ee2097223993.jpeg?size=256 # Apply default site image
+  - scope:
+      path: ""
+      type: posts
+    values:
+      tags:
+        - Other # Add a default tag to all posts

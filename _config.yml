@@ -43,7 +43,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: https://gravatar.com/userimage/129452545/bf957c2fcbd69a06b5d5ee2097223993.jpeg?size=256 # Apply default site image
+      image: "" # Apply default site image
   - scope:
       path: ""
       type: posts

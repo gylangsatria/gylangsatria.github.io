@@ -3,9 +3,9 @@ theme: "minima"
 
 title: Gylang's Blog
 author: Gylang Satria 
-description: just a ordinary blogger
+description: A personal blog documenting experiments, breakdowns, and lessons learned the hard way.
 email: sayugiteam@gmail.com
-#url: nanti ini ditambahkan
+url: "https://gylangsatria.github.io"
 
 timezone: Etc/UTC # GitHub uses UTC. This is to force dev environment to match
 future: false # GitHub Pages will publish future posts if this isn't set to false
@@ -34,6 +34,8 @@ kramdown:
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
 
 titles_from_headings:
   strip_title: true

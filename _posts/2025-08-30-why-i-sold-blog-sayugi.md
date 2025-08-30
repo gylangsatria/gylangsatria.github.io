@@ -1,3 +1,11 @@
+---
+title: "Why I Sold Blog Sayugi"
+date: 2025-08-30
+layout: post
+tags: [blog, personal]
+description: Reflections on why I had to let go of Blog Sayugi.
+---
+
 Writing this is not easy. Blog Sayugi was never just a blog to me—it was part of my personal journey. A place where I wrote, learned, and grew. But in 2023, I made a difficult decision: I sold the blog.
 
 Many people asked, “Why did you sell it?”  

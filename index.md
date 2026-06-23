@@ -2,9 +2,9 @@
 layout: default
 ---
 <section class="home-hero">
-  <p class="eyebrow">Tech blog, workflow notes, and systems thinking</p>
-  <h1>Welcome to Gylang’s corner of the web.</h1>
-  <p>Deep dives into Linux, iOS, code, and practical experiments. Simple, readable, and always tuned for modern tech minds.</p>
+  <p class="eyebrow">Network security, systems thinking, and practical tinkering</p>
+  <h1>Welcome to Gylang Satria Yudha's corner of the web.</h1>
+  <p>Exploring network security, Linux infrastructure, and the intersection of technology and education. Graduate of Universitas Sangga Buana with a thesis on AES encryption for online exam security. Writing about what I build, break, and secure.</p>
 </section>
 
 <section class="home-panels">
@@ -21,13 +21,13 @@ layout: default
   </article>
   <article class="home-panel">
     <h2>What this blog covers</h2>
-    <p>My writing focuses on practical systems, debugging notes, device experiments, and the tools that keep everything running smoothly.</p>
+    <p>My writing focuses on network security, Linux systems, infrastructure experiments, and lessons learned from academic research and real-world applications. No fluff. Just genuine projects and honest stories.</p>
     <div class="tag-list">
+      <span>Network Security</span>
       <span>Linux</span>
-      <span>iOS</span>
-      <span>Code</span>
+      <span>Infrastructure</span>
+      <span>Cybersecurity</span>
       <span>DIY</span>
-      <span>Automation</span>
     </div>
   </article>
 </section>

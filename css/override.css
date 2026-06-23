@@ -159,6 +159,22 @@ article.post {
   backdrop-filter: blur(14px);
 }
 
+article.post {
+  display: flex;
+  flex-direction: column;
+  gap: 1.35rem;
+  width: min(100%, 92ch);
+  margin: 0 auto;
+  padding: 1.85rem 1.8rem;
+}
+
+article.post > .post-header,
+article.post > .share-links,
+article.post > .post-content,
+article.post > .post_navi {
+  width: 100%;
+}
+
 .home-hero {
   padding: 2.7rem 2.15rem;
 }
@@ -274,9 +290,10 @@ article.post > .post-header {
   flex-direction: column;
   gap: 0.45rem;
   align-items: flex-start;
+  width: 100%;
 }
 article.post > .post-header .post-title {
-  max-width: 72ch;
+  max-width: 100%;
 }
 
 @media (max-width: 768px) {

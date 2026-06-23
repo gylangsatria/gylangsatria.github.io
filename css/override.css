@@ -446,7 +446,7 @@ article.post {
 
   /* leave space so brand doesn't collide with hamburger */
   .site-brand {
-    padding-right: 3.6rem;
+    padding-right: 2.2rem;
   }
 
   /* hide nav by default, show when open */
@@ -456,7 +456,7 @@ article.post {
   .site-nav.open {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
     gap: 0.25rem;
     margin-top: 0.6rem;
     width: 100%;
@@ -480,7 +480,7 @@ article.post {
     color: var(--text);
     background: transparent;
     border: none;
-    text-align: left;
+    text-align: center;
   }
   .site-nav a + a {
     border-top: 1px solid rgba(148, 163, 184, 0.06);

@@ -91,6 +91,28 @@ a:focus {
   max-width: 34rem;
 }
 
+/* Hamburger toggle (hidden by default, visible on small screens) */
+.nav-toggle {
+  display: none;
+  background: transparent;
+  border: 0;
+  padding: 0.25rem;
+  width: 42px;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.nav-toggle-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--muted);
+  margin: 3px 0;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
 .site-nav {
   display: flex;
   flex-wrap: wrap;
@@ -567,15 +589,36 @@ article.post {
     padding-bottom: 0.35rem;
   }
 
-  .site-nav {
-    gap: 0.4rem;
-    margin-top: 0.65rem;
+  /* Hide nav by default and show hamburger */
+  .nav-toggle { display: inline-flex; }
+
+  .site-nav { display: none; }
+  .site-nav.open {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+    margin-top: 0.6rem;
+    width: 100%;
   }
 
   .site-nav a {
-    padding: 0.45rem 0.9rem;
-    min-height: 2.5rem;
-    font-size: 0.85rem;
+    display: inline-flex;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    min-height: 2.75rem;
+    font-size: 0.95rem;
+    border-radius: 12px;
+    justify-content: flex-start;
+    padding-left: 1.1rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+  }
+
+  .site-nav a:hover,
+  .site-nav a:focus {
+    background: rgba(56, 189, 248, 0.12);
+    color: var(--accent-soft);
   }
 
   .site-brand-name {

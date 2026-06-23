@@ -256,6 +256,9 @@ article.post {
   line-height: 1.95;
   color: #cbd5e1;
   max-width: 92ch;
+  margin: 0 auto;
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
 }
 .post-content h2,
 .post-content h3,
@@ -288,6 +291,18 @@ article.post {
   border-radius: 1rem;
   margin: 1.75rem auto;
   box-shadow: 0 22px 48px rgba(0, 0, 0, 0.22);
+}
+
+/* Prevent overflow for long content (code blocks, tables, iframes) */
+.post-content pre,
+.post-content code,
+.post-content table,
+.post-content iframe {
+  max-width: 100%;
+  overflow-x: auto;
+}
+.post-content code {
+  word-break: break-word;
 }
 
 .post_navi {
@@ -462,7 +477,9 @@ article.post {
     align-items: center;
     gap: 0.25rem;
     margin-top: 0.6rem;
-    width: 100%;
+    width: min(92%, 460px);
+    margin-left: auto;
+    margin-right: auto;
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 14px;

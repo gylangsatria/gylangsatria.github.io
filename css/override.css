@@ -247,25 +247,75 @@ article.post {
 
 .post-content {
   padding-top: 0.5rem;
-  line-height: 1.85;
+  line-height: 1.95;
   color: #cbd5e1;
+  max-width: 92ch;
 }
 
 .post-content h2,
 .post-content h3,
 .post-content h4 {
   color: #f8fafc;
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.post-content p,
+.post-content li {
+  margin: 1rem 0;
+}
+
+.post-content ul,
+.post-content ol {
+  margin: 1.2rem 0 1.2rem 1.4rem;
 }
 
 .post-content a {
   color: var(--accent);
 }
 
+.post-content blockquote {
+  margin: 1.8rem 0;
+  padding: 1.25rem 1.3rem;
+  border-left: 4px solid rgba(56, 189, 248, 0.45);
+  background: rgba(15, 23, 42, 0.75);
+  color: #e2e8f0;
+}
+
+.post-content img {
+  display: block;
+  max-width: 100%;
+  border-radius: 1rem;
+  margin: 1.75rem auto;
+  box-shadow: 0 22px 48px rgba(0, 0, 0, 0.22);
+}
+
+.post-content figure,
+.post-content table {
+  margin: 1.75rem 0;
+}
+
+.post-content table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.post-content th,
+.post-content td {
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  padding: 0.95rem 1.1rem;
+}
+
 .post-content pre,
 .post-content code {
-  background: rgba(15, 23, 42, 0.88);
+  background: rgba(15, 23, 42, 0.95);
   border: 1px solid rgba(148, 163, 184, 0.12);
   border-radius: 14px;
+}
+
+.post-content pre {
+  padding: 1rem;
+  overflow-x: auto;
 }
 
 .post_navi {
@@ -395,46 +445,6 @@ article.post {
 
 .post-list-item a {
   font-size: 1rem;
-}
-
-.post-content {
-  max-width: 92ch;
-}
-
-.post-content h2,
-.post-content h3,
-.post-content h4 {
-  margin-top: 2rem;
-}
-
-.post-content p,
-.post-content li {
-  line-height: 1.9;
-}
-
-.post-content blockquote {
-  margin: 1.75rem 0;
-  padding: 1.35rem 1.4rem;
-  border-left: 4px solid rgba(56, 189, 248, 0.35);
-  background: rgba(15, 23, 42, 0.72);
-}
-
-.post-content img {
-  border-radius: 20px;
-  margin: 1.75rem 0;
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
-}
-
-.post-content table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 1.75rem 0;
-}
-
-.post-content th,
-.post-content td {
-  border: 1px solid rgba(148, 163, 184, 0.12);
-  padding: 0.95rem 1.1rem;
 }
 
 .post_navi .post_navi-item {

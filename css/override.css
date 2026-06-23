@@ -346,3 +346,108 @@ article.post {
     width: 100%;
   }
 }
+
+.site-shell {
+  padding: 0 1rem 3rem;
+}
+
+.site-header {
+  padding: 1.75rem 0 1.25rem;
+}
+
+.site-brand-tag {
+  font-size: 1rem;
+  opacity: 0.92;
+  max-width: 34rem;
+}
+
+.site-nav a {
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.site-nav a:hover {
+  background: rgba(56, 189, 248, 0.12);
+  color: #fff;
+}
+
+.home-hero {
+  padding: 2.7rem 2.15rem;
+}
+
+.home-panels {
+  gap: 2rem;
+}
+
+.home-panel {
+  padding: 2rem;
+}
+
+.home-panel h2 {
+  margin-bottom: 1rem;
+}
+
+.post-list-item {
+  padding: 1.1rem 1.35rem;
+}
+
+.post-list-item a {
+  font-size: 1rem;
+}
+
+.post-content {
+  max-width: 92ch;
+}
+
+.post-content h2,
+.post-content h3,
+.post-content h4 {
+  margin-top: 2rem;
+}
+
+.post-content p,
+.post-content li {
+  line-height: 1.9;
+}
+
+.post-content blockquote {
+  margin: 1.75rem 0;
+  padding: 1.35rem 1.4rem;
+  border-left: 4px solid rgba(56, 189, 248, 0.35);
+  background: rgba(15, 23, 42, 0.72);
+}
+
+.post-content img {
+  border-radius: 20px;
+  margin: 1.75rem 0;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+}
+
+.post-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.75rem 0;
+}
+
+.post-content th,
+.post-content td {
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  padding: 0.95rem 1.1rem;
+}
+
+.post_navi .post_navi-item {
+  background: rgba(15, 23, 42, 0.82);
+}
+
+.site-footer {
+  border-top: 1px solid rgba(148, 163, 184, 0.12);
+  background: rgba(15, 23, 42, 0.8);
+  justify-content: center;
+  text-align: center;
+}
+
+.site-footer p {
+  margin: 0.4rem 0;
+}

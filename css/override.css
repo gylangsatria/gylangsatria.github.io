@@ -291,6 +291,25 @@ article.post > .post-header .post-title {
     justify-content: center;
   }
 }
+
+/* Desktop: add subtle separation and spacing for post header/meta */
+article.post > .post-header {
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.06);
+}
+.post-meta > * {
+  margin-right: 0.6rem;
+}
+.post-meta a {
+  color: var(--accent);
+  text-decoration: none;
+}
+.post-meta a:hover {
+  text-decoration: underline;
+}
+.share-links {
+  margin-top: 0.9rem;
+}
 .post-content h2,
 .post-content h3,
 .post-content h4 {
@@ -507,12 +526,10 @@ article.post > .post-header .post-title {
     flex-direction: column;
     align-items: center;
     gap: 0.25rem;
-    /* float as a centered panel below the header */
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: calc(100% + 6px);
+    /* keep nav in the document flow so it pushes content down, but constrain width and center */
+    position: relative;
     width: min(92%, 460px);
+    margin: 0.6rem auto 0;
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 14px;

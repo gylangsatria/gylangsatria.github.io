@@ -163,7 +163,7 @@ article.post {
   display: flex;
   flex-direction: column;
   gap: 1.35rem;
-  width: min(100%, 92ch);
+  /* width: min(100%, 92ch); */
   margin: 0 auto;
   padding: 1.85rem 1.8rem;
 }
@@ -572,7 +572,10 @@ article.post > .post-header {
     background: rgba(15, 23, 42, 0.94);
     border: 1px solid rgba(148, 163, 184, 0.08);
     text-align: center;
-    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    transition:
+      background 0.2s ease,
+      color 0.2s ease,
+      transform 0.2s ease;
   }
   .site-nav a + a {
     border-top: 1px solid rgba(148, 163, 184, 0.08);

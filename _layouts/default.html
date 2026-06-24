@@ -153,6 +153,41 @@ layout: null
             window.scrollTo({ top: 0, behavior: "smooth" });
           });
         }
+
+        /* Post carousel (homepage) */
+        var carousel = document.querySelector(".post-carousel");
+        if (carousel) {
+          var items = carousel.querySelectorAll(".post-carousel-item");
+          var prevBtn = carousel.querySelector(".post-carousel-prev");
+          var nextBtn = carousel.querySelector(".post-carousel-next");
+          var counterEl = carousel.querySelector(".post-carousel-current");
+          var current = 0;
+          var total = items.length;
+
+          function showItem(index) {
+            items.forEach(function (el) {
+              el.removeAttribute("data-active");
+            });
+            items[index].setAttribute("data-active", "true");
+            if (counterEl) counterEl.textContent = index + 1;
+            current = index;
+          }
+
+          if (prevBtn) {
+            prevBtn.addEventListener("click", function () {
+              var prev = current - 1;
+              if (prev < 0) prev = total - 1;
+              showItem(prev);
+            });
+          }
+          if (nextBtn) {
+            nextBtn.addEventListener("click", function () {
+              var next = current + 1;
+              if (next >= total) next = 0;
+              showItem(next);
+            });
+          }
+        }
       });
     </script>
   </body>

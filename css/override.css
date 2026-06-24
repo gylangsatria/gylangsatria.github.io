@@ -314,6 +314,76 @@ article.post > .post_navi {
   white-space: nowrap;
 }
 
+/* ── Post carousel (homepage) ── */
+.post-carousel {
+  position: relative;
+  min-height: 140px;
+}
+.post-carousel-item {
+  display: none;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.post-carousel-item[data-active="true"] {
+  display: flex;
+}
+.post-carousel-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-strong) !important;
+  line-height: 1.35;
+  transition: color 0.2s ease;
+}
+.post-carousel-title:hover {
+  color: var(--accent) !important;
+}
+.post-carousel-date {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.post-carousel-excerpt {
+  font-size: 0.93rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0.3rem 0 0;
+}
+.post-carousel-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+.post-carousel-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+.post-carousel-btn:hover {
+  transform: scale(1.1);
+  border-color: var(--accent);
+  background: var(--surface-strong);
+  color: var(--accent);
+}
+.post-carousel-btn:active {
+  transform: scale(0.95);
+}
+.post-carousel-counter {
+  font-size: 0.82rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
 .tag-list {
   display: flex;
   flex-wrap: wrap;

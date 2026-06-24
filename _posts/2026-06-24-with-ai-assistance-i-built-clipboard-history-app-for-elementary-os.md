@@ -2,7 +2,7 @@
 title: "With AI Assistance, I Successfully Built a Clipboard History App for elementary OS"
 date: 2026-06-24
 layout: post
-tags: [linux, elementary-os, vala, gtk, clipboard, ai, programming, open-source]
+tags: [linux, elementary-os]
 description: How I built a native clipboard history app for elementary OS using Vala, GTK3, and Granite — with a little help from AI.
 ---
 
@@ -39,6 +39,8 @@ Every time you copy text, the application automatically saves it to your clipboa
 So when you need text that you previously copied, you don't have to search for it from the original source again.
 
 Just open the app, find the text you want, and click to copy it again.
+
+![Screenshot App](/assets/screenshot-dark.png)
 
 ### Features Currently Available:
 

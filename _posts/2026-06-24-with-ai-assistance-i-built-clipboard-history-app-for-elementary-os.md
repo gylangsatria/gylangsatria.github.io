@@ -104,3 +104,5 @@ So anyone can view the source code, provide feedback, or even contribute if they
 What matters most to me isn't the number of GitHub stars or downloads, but the fact that as someone who isn't a professional developer, I managed to build a Linux app that I actually use every single day.
 
 And honestly? That feels pretty great.
+
+Repository : https://github.com/gylangsatria/clipboard-history-elementaryos

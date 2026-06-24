@@ -70,10 +70,8 @@ layout: null
         var btn = document.querySelector(".nav-toggle");
         var nav = document.getElementById("site-navigation");
         if (btn && nav) {
-          var headerEl = document.querySelector(".site-header");
           btn.addEventListener("click", function () {
             var isOpen = nav.classList.toggle("open");
-            if (headerEl) headerEl.classList.toggle("open", isOpen);
             btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
           });
         }

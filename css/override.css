@@ -746,3 +746,37 @@ article.post > .post-header {
 .site-main {
   margin-bottom: 2.5rem;
 }
+
+/* Back to top button */
+.back-to-top {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 100;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.back-to-top:hover,
+.back-to-top:focus-visible {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+  background: var(--surface-strong);
+}
+
+.back-to-top[hidden] {
+  display: none;
+}

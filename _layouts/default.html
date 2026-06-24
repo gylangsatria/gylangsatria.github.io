@@ -137,6 +137,22 @@ layout: null
             applyTheme(nextTheme);
           });
         });
+
+        /* Back to top */
+        var backBtn = document.querySelector(".back-to-top");
+        if (backBtn) {
+          var scrollThreshold = 400;
+          window.addEventListener("scroll", function () {
+            if (window.scrollY > scrollThreshold) {
+              backBtn.removeAttribute("hidden");
+            } else {
+              backBtn.setAttribute("hidden", "");
+            }
+          });
+          backBtn.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          });
+        }
       });
     </script>
   </body>

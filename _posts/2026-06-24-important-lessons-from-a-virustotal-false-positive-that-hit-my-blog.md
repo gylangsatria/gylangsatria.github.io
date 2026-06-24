@@ -2,7 +2,7 @@
 title: "Important Lessons from a VirusTotal False Positive That Hit My Blog"
 date: 2026-06-24
 layout: post
-tags: [security, virustotal, falsepositive, blog, personal, cybersecurity]
+tags: [blog]
 description: Lessons learned from a VirusTotal false positive that flagged my personal blog as malicious, and the journey to get it cleared.
 ---
 

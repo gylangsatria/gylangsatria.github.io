@@ -2,7 +2,7 @@
 title: "Eight Years Writing at WinPoin: From Windows 10 to the AI Era"
 date: 2026-06-24
 layout: post
-tags: [winpoin, writing, microsoft, windows, windows10, windows11, AI, personal]
+tags: [winpoin, blog]
 description: Reflecting on eight years of writing at WinPoin, from the Windows 10 era to the rise of AI, and what it means to grow alongside Microsoft's transformation.
 ---
 

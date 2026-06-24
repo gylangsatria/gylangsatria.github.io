@@ -2,7 +2,7 @@
 title: "2026: A Year of Windows, Linux, Security, and Writing"
 date: 2026-06-23
 layout: post
-tags: [windows, linux, security, cybersecurity, AI, personal]
+tags: [blog, personal]
 description: Reflections on exploring Windows, Linux, security challenges, and the joy of writing about technology in 2026.
 ---
 

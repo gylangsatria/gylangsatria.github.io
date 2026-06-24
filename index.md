@@ -1,10 +1,11 @@
 ---
 layout: default
 ---
+
 <section class="home-hero">
-  <p class="eyebrow">Network security, systems thinking, and practical tinkering</p>
+  <p class="eyebrow"> technology writer, blogger, and IT practitioner</p>
   <h1>Welcome to Gylang Satria Yudha's corner of the web.</h1>
-  <p>Exploring network security, Linux infrastructure, and the intersection of technology and education. Graduate of Universitas Sangga Buana with a thesis on AES encryption for online exam security. Writing about what I build, break, and secure.</p>
+  <p>For more than a decade, I've been exploring the world of technology through writing, experimentation, and hands-on practice. What started as a passion for blogging grew into a career focused on systems, networks, cybersecurity, and technology education.</p>
 </section>
 
 <section class="home-panels">
@@ -21,13 +22,12 @@ layout: default
   </article>
   <article class="home-panel">
     <h2>What this blog covers</h2>
-    <p>My writing focuses on network security, Linux systems, infrastructure experiments, and lessons learned from academic research and real-world applications. No fluff. Just genuine projects and honest stories.</p>
+    <p>This website is where I document ideas, discoveries, technical deep dives, and lessons learned along the way. Whether it's Windows, Linux, infrastructure, security, or emerging technologies, my goal is simple: understand it deeply, then share it clearly.</p>
     <div class="tag-list">
       <span>Network Security</span>
       <span>Linux</span>
-      <span>Infrastructure</span>
+      <span>Blogging</span>
       <span>Cybersecurity</span>
-      <span>DIY</span>
     </div>
   </article>
 </section>

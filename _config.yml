@@ -5,7 +5,7 @@ title: Gylang's Blog
 author: Gylang Satria 
 description: A personal blog documenting experiments, breakdowns, and lessons learned the hard way.
 email: sayugiteam@gmail.com
-url: "https://gylangsatria.github.io"
+url: "https://blog.gylang.my.id"
 
 timezone: Etc/UTC # GitHub uses UTC. This is to force dev environment to match
 future: false # GitHub Pages will publish future posts if this isn't set to false

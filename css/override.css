@@ -620,7 +620,7 @@ article.post > .post-header {
   .site-nav {
     display: none;
   }
-  .site-nav.open {
+  .site-header.open .site-nav {
     display: flex;
     flex-direction: column;
     align-items: stretch;

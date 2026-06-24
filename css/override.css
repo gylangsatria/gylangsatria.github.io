@@ -590,22 +590,43 @@ article.post > .post-header {
 /* Mobile: Bootstrap-style navbar collapse */
 @media (max-width: 600px) {
   .site-header {
-    padding: 0.75rem 0 0.35rem;
-    position: relative;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "brand toggle" "nav nav";
     align-items: center;
-  }
-
-  .nav-toggle {
-    display: inline-flex;
-    position: relative;
-    z-index: 70;
+    gap: 0;
+    padding: 0.75rem 0 0.35rem;
   }
 
   .site-brand {
+    grid-area: brand;
     width: auto;
     max-width: min(80%, 320px);
     padding-right: 0.5rem;
+  }
+
+  .nav-toggle {
+    grid-area: toggle;
+    display: inline-flex;
+    justify-self: end;
+    z-index: 70;
+  }
+
+  .site-nav {
+    grid-area: nav;
+    display: none;
+  }
+  .site-nav.open {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    margin-top: 0.65rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 0.4rem;
+    box-shadow: var(--shadow);
+    z-index: 60;
   }
 
   /* Hide desktop theme toggle, show mobile one inside nav */
@@ -614,25 +635,6 @@ article.post > .post-header {
   }
   .theme-toggle-mobile {
     display: inline-flex;
-  }
-
-  .site-nav {
-    display: none;
-  }
-  .site-nav.open {
-    display: flex;
-    flex-direction: column;
-    gap: 0.15rem;
-    position: absolute;
-    top: calc(100% + 0.35rem);
-    left: 0;
-    right: 0;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 0.4rem;
-    box-shadow: var(--shadow);
-    z-index: 60;
   }
 
   .site-nav a {
@@ -717,7 +719,7 @@ article.post > .post-header {
     padding: 1.4rem;
   }
 
-  /* nav is absolutely positioned, no margin adjustment needed */
+  /* no extra margin needed — nav sits in its own grid row */
 }
 
 /* Very small screens */

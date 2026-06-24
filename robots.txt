@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gylangsatria.github.io/sitemap.xml
+Sitemap: https://blog.gylang.my.id/sitemap.xml

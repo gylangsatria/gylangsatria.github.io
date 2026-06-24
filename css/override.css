@@ -625,8 +625,8 @@ article.post > .post-header {
     flex-direction: column;
     gap: 0.15rem;
     position: relative;
-    width: 100%;
-    margin: 0.65rem 0 0;
+    width: auto;
+    margin: 0.65rem calc(-1rem) 0;
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 14px;

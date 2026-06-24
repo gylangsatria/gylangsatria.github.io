@@ -13,6 +13,10 @@ All notable changes to this project will be documented in this file.
 - Duplicate theme toggle button inside the mobile nav panel so switching is always accessible
 - CSS custom properties for both light and dark color schemes
 - Meta `color-scheme` and `theme-color` tags for native browser theme support
+- `README.md` with project overview, setup instructions, and structure
+- `CHANGELOG.md` for release history tracking
+- Back-to-top floating button with smooth scroll and scroll detection
+- Post navigation links (`navlinks.html`) as a direct child of `article.post` for consistent width
 
 ### Changed
 

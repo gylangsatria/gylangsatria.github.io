@@ -620,14 +620,14 @@ article.post > .post-header {
   .site-nav {
     display: none;
   }
-  .site-header.open .site-nav {
+  .site-nav.open {
     display: flex;
     flex-direction: column;
     align-items: stretch;
+    flex: 1 1 100%; /* ganti dari width: auto — paksa ambil baris sendiri, full width */
     gap: 0.15rem;
     position: relative;
-    width: auto;
-    margin: 0.65rem calc(-1rem) 0;
+    margin: 0.65rem 0 0; /* ganti dari calc(-1rem), karena sudah full width di dalam shell */
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 14px;

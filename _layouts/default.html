@@ -34,7 +34,26 @@ layout: null
             rel="noopener"
             >GitHub</a
           >{% endif %}
+          <button
+            class="theme-toggle theme-toggle-mobile"
+            type="button"
+            aria-label="Toggle color theme"
+            aria-pressed="false"
+          >
+            <span class="theme-toggle-icon" aria-hidden="true">🌙</span>
+            <span class="theme-toggle-text">Dark</span>
+          </button>
         </nav>
+
+        <button
+          class="theme-toggle"
+          type="button"
+          aria-label="Toggle color theme"
+          aria-pressed="false"
+        >
+          <span class="theme-toggle-icon" aria-hidden="true">🌙</span>
+          <span class="theme-toggle-text">Dark</span>
+        </button>
       </header>
 
       <main class="site-main">{{ content }}</main>
@@ -50,12 +69,60 @@ layout: null
       document.addEventListener("DOMContentLoaded", function () {
         var btn = document.querySelector(".nav-toggle");
         var nav = document.getElementById("site-navigation");
-        if (!btn || !nav) return;
-        var headerEl = document.querySelector(".site-header");
-        btn.addEventListener("click", function () {
-          var isOpen = nav.classList.toggle("open");
-          if (headerEl) headerEl.classList.toggle("open", isOpen);
-          btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+        if (btn && nav) {
+          var headerEl = document.querySelector(".site-header");
+          btn.addEventListener("click", function () {
+            var isOpen = nav.classList.toggle("open");
+            if (headerEl) headerEl.classList.toggle("open", isOpen);
+            btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+          });
+        }
+
+        var root = document.documentElement;
+        var metaThemeColor = document.querySelector('meta[name="theme-color"]');
+
+        function syncThemeBtns(theme) {
+          document.querySelectorAll(".theme-toggle").forEach(function (btn) {
+            var icon = btn.querySelector(".theme-toggle-icon");
+            var txt = btn.querySelector(".theme-toggle-text");
+            btn.setAttribute(
+              "aria-pressed",
+              theme === "dark" ? "true" : "false",
+            );
+            if (icon) icon.textContent = theme === "dark" ? "☀️" : "🌙";
+            if (txt) txt.textContent = theme === "dark" ? "Light" : "Dark";
+            btn.setAttribute(
+              "aria-label",
+              theme === "dark" ? "Switch to light mode" : "Switch to dark mode",
+            );
+          });
+        }
+
+        function applyTheme(theme) {
+          root.setAttribute("data-theme", theme);
+          syncThemeBtns(theme);
+          if (metaThemeColor) {
+            metaThemeColor.setAttribute(
+              "content",
+              theme === "dark" ? "#07101c" : "#f8fbff",
+            );
+          }
+          localStorage.setItem("site-theme", theme);
+        }
+
+        var storedTheme = localStorage.getItem("site-theme");
+        var prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)",
+        ).matches;
+        var theme = storedTheme || (prefersDark ? "dark" : "light");
+        applyTheme(theme);
+
+        document.querySelectorAll(".theme-toggle").forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            var nextTheme =
+              root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+            applyTheme(nextTheme);
+          });
         });
       });
     </script>

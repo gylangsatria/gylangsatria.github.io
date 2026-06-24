@@ -622,11 +622,11 @@ article.post > .post-header {
   .site-nav.open {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
-    flex: 1 1 100%;
     gap: 0.15rem;
-    position: relative;
-    margin: 0.65rem 1rem 0;
+    position: absolute;
+    top: calc(100% + 0.35rem);
+    left: 0;
+    right: 0;
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 14px;
@@ -717,10 +717,7 @@ article.post > .post-header {
     padding: 1.4rem;
   }
 
-  /* when open, push main down slightly (nav occupies flow) */
-  .site-header:has(.site-nav.open) + .site-main {
-    margin-top: 0.45rem;
-  }
+  /* nav is absolutely positioned, no margin adjustment needed */
 }
 
 /* Very small screens */

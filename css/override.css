@@ -627,7 +627,7 @@ article.post > .post-header {
     flex: 1 1 100%; /* ganti dari width: auto — paksa ambil baris sendiri, full width */
     gap: 0.15rem;
     position: relative;
-    margin: 0.65rem 0 0; /* ganti dari calc(-1rem), karena sudah full width di dalam shell */
+    margin: 0.75rem 0 0.35; /* ganti dari calc(-1rem), karena sudah full width di dalam shell */
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 14px;

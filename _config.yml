@@ -1,15 +1,13 @@
 theme: "minima"
 
-
 title: Gylang's Blog
-author: Gylang Satria 
+author: Gylang Satria
 description: A personal blog documenting experiments, breakdowns, and lessons learned the hard way.
 email: sayugiteam@gmail.com
 url: "https://blog.gylang.my.id"
 
 timezone: Etc/UTC # GitHub uses UTC. This is to force dev environment to match
 future: false # GitHub Pages will publish future posts if this isn't set to false
-
 
 # Email / Social media user names used by the minima theme:
 # All of these are optional and can be removed or commented out
@@ -25,12 +23,10 @@ instagram_username: gylang_satria
 #googleplus_username: +username
 rss: rss
 
-
-
 kramdown:
   syntax_highlighter_opts:
     disable: true
-    
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap

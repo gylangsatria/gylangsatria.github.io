@@ -2,7 +2,7 @@
 title: "From Writing Tutorials to Product Review Opportunities"
 date: 2026-06-25
 layout: post
-tags: [writing, review, technology, personal, winpoin]
+tags: [blog, winpoin]
 description: How my journey as a technology writer evolved from writing tutorials and news to reviewing real products — and what I learned along the way.
 ---
 

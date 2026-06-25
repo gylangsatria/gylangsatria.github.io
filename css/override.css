@@ -560,7 +560,7 @@ article.post > .post-header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 1.5rem;
   margin-top: 3rem;
   border-top: 1px solid var(--border);
   background: var(--surface-muted);
@@ -570,6 +570,47 @@ article.post > .post-header {
 }
 .site-footer p {
   margin: 0.4rem 0;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.footer-social {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.45rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+.social-link:hover,
+.social-link:focus {
+  transform: translateY(-2px);
+  color: var(--text-strong);
+  border-color: var(--accent);
+}
+.social-link svg {
+  flex-shrink: 0;
 }
 
 /* Responsive breakpoints */
@@ -653,7 +694,11 @@ article.post > .post-header {
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    align-items: center;
     gap: 0.65rem;
+  }
+  .footer-social {
+    justify-content: center;
   }
 }
 

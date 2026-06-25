@@ -12,14 +12,14 @@ future: false # GitHub Pages will publish future posts if this isn't set to fals
 # Email / Social media user names used by the minima theme:
 # All of these are optional and can be removed or commented out
 
-#twitter_username: gylang_satria // udah jarang aktif juga
+twitter_username: gylang_satria
 github_username: gylangsatria
 instagram_username: gylang_satria
+facebook_username: gylangsatriayudha
+youtube_username: gylangsatria
 #linkedin_username: gylangsatriayudha
-#facebook_username: username
 #flickr_username: username
 #pinterest_username: username
-#youtube_username: username
 #googleplus_username: +username
 rss: rss
 

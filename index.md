@@ -35,3 +35,14 @@ layout: default
     </div>
   </article>
 </section>
+
+<section class="home-panel winpoin-section">
+  <h2>Latest from WinPoin</h2>
+  <div id="winpoin-posts" class="winpoin-grid">
+    <p class="winpoin-loading">Memuat postingan terbaru…</p>
+  </div>
+  <a href="https://winpoin.com" target="_blank" rel="noopener" class="post-nav-btn" title="Visit WinPoin">
+    <span>Visit WinPoin</span>
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+  </a>
+</section>

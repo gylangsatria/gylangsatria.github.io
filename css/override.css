@@ -895,3 +895,125 @@ article.post > .post-header {
 .back-to-top[hidden] {
   display: none;
 }
+
+/* ── Winpoin external posts section ── */
+.winpoin-section {
+  grid-column: 1 / -1;
+}
+
+.winpoin-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin: 1rem 0 1.25rem;
+}
+
+.winpoin-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--surface-muted);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  overflow: hidden;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.winpoin-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+}
+
+.winpoin-card-thumb {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: var(--bg-deep);
+}
+
+.winpoin-card-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.winpoin-card-body {
+  padding: 1rem 1.15rem 1.15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.winpoin-card-title {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.4;
+}
+
+.winpoin-card-title a {
+  color: var(--text-strong);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.winpoin-card-title a:hover {
+  color: var(--accent);
+}
+
+.winpoin-card-excerpt {
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  flex: 1;
+}
+
+.winpoin-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.winpoin-card-date {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.winpoin-card-source {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  background: rgba(56, 189, 248, 0.1);
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+}
+
+.winpoin-loading,
+.winpoin-error {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: var(--muted);
+  padding: 2rem 0;
+  font-size: 0.95rem;
+}
+
+.winpoin-error {
+  color: #ef4444;
+}
+
+@media (max-width: 650px) {
+  .winpoin-grid {
+    grid-template-columns: 1fr;
+  }
+}

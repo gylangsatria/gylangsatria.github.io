@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  const API_URL = "https://winpoin.com/wp-json/wp/v2/posts?per_page=5&_embed";
+  const API_URL = "https://winpoin.com/wp-json/wp/v2/posts?per_page=6&_embed";
 
   const container = document.getElementById("winpoin-posts");
 

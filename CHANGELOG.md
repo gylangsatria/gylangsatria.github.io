@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
+- Favicon (`/assets/favicon.ico`) integrated into blog layout via `<link>` tags in `head.html`
 - WinPoin latest posts section on homepage — fetches 6 latest articles from WinPoin via WordPress REST API and renders them as individual cards with thumbnail, title, excerpt, date, and source badge
 - `js/winpoin-posts.js` — client-side script to fetch and display WinPoin posts
 - CSS styles for Winpoin card grid (`.winpoin-grid`, `.winpoin-card`, etc.) with responsive layout and hover effects

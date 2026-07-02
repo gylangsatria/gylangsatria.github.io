@@ -14,19 +14,19 @@
   <link rel="icon" type="image/x-icon" href="{{ "/assets/favicon.ico" | relative_url }}">
   <link rel="shortcut icon" type="image/x-icon" href="{{ "/assets/favicon.ico" | relative_url }}">
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
-  <link rel="stylesheet" type="text/css" href="/css/override.css">
 
   {% feed_meta %}
+
+  <!-- Begin highlight.js support -->
+  <link rel="stylesheet" href="/js/highlightjs/styles/github.css">
+  <link rel="stylesheet" href="/js/highlightjs/styles/ssms.css" />
+  <link rel="stylesheet" type="text/css" href="/css/override.css">
 
   {% if jekyll.environment == 'production' and site.google_analytics -%}
   <!-- Begin Google Analytics -->
   {% include google-analytics.html %}
   <!-- End Google Analytics -->
   {%- endif %}
-
-  <!-- Begin highlight.js support -->
-  <link rel="stylesheet" href="/js/highlightjs/styles/github.css">
-  <link rel="stylesheet" href="/js/highlightjs/styles/ssms.css" />
 
   <script type="text/javascript" src="/js/highlightjs/highlight.min.js"></script>
 

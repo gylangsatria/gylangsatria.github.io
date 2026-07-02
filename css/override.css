@@ -42,11 +42,17 @@
 
 html {
   scroll-behavior: smooth;
+  min-width: 0;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
   min-height: 100vh;
+  min-width: 0;
+  width: 100%;
+  overflow-x: hidden;
   background:
     radial-gradient(circle at top, rgba(20, 184, 166, 0.16), transparent 20%),
     radial-gradient(
@@ -85,6 +91,7 @@ a:focus {
 }
 
 .site-shell {
+  width: min(100%, 1080px);
   max-width: 1080px;
   margin: 0 auto;
   padding: 0 1rem 3rem;
@@ -95,6 +102,17 @@ a:focus {
 article.post,
 article.post > .post-content {
   min-width: 0;
+}
+
+.site-main,
+article.post {
+  width: 100%;
+  max-width: 100%;
+}
+
+article.post > .post-content {
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .site-header {
@@ -433,9 +451,19 @@ article.post > .post_navi {
   line-height: 1.95;
   color: var(--text-secondary);
   max-width: 92ch;
+  width: 100%;
   margin: 0 auto;
   padding-left: 0.9rem;
   padding-right: 0.9rem;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .post-content {
+    max-width: 100%;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
 }
 
 /* Post header layout: keep title left-aligned on desktop, centered on small screens */
@@ -518,6 +546,10 @@ article.post > .post-header {
 .post-content,
 .post-content * {
   min-width: 0;
+  box-sizing: border-box;
+}
+.post-content {
+  overflow-wrap: anywhere;
 }
 .post-content pre,
 .post-content table,
@@ -530,6 +562,7 @@ article.post > .post-header {
   overflow-x: auto !important;
   overflow-y: hidden !important;
   -webkit-overflow-scrolling: touch;
+  word-break: break-word !important;
 }
 .post-content pre {
   white-space: pre !important;
@@ -664,6 +697,17 @@ article.post > .post-header {
 
 /* Tablet & below */
 @media (max-width: 768px) {
+  html,
+  body,
+  .page-shell,
+  .site-shell,
+  .site-main,
+  article.post {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    overflow-x: hidden !important;
+  }
   .site-header {
     flex-direction: column;
     align-items: center;

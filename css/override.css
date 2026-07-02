@@ -817,10 +817,43 @@ article.post > .post-header {
     padding-top: 1rem;
   }
   article.post {
-    padding: 1.4rem 1.15rem;
+    padding: 1.2rem 0.95rem;
   }
   .post-title {
-    font-size: clamp(1.3rem, 4vw, 1.8rem);
+    font-size: clamp(1.2rem, 4.5vw, 1.6rem);
+    line-height: 1.25;
+  }
+  .post-meta {
+    font-size: 0.9rem;
+  }
+  .post-content {
+    max-width: 100%;
+    padding: 0 0.2rem;
+    font-size: 0.97rem;
+    line-height: 1.7;
+  }
+  .post-content p,
+  .post-content li,
+  .post-content pre,
+  .post-content table {
+    overflow-wrap: anywhere;
+  }
+  .post-content h2,
+  .post-content h3,
+  .post-content h4 {
+    margin-top: 1.35rem;
+    margin-bottom: 0.55rem;
+  }
+  .post-content p,
+  .post-content li {
+    margin: 0.8rem 0;
+  }
+  .post-content blockquote {
+    margin: 1.2rem 0;
+    padding: 0.95rem 1rem;
+  }
+  .post-content img {
+    margin: 1.2rem auto;
   }
   .home-hero {
     padding: 1.8rem 1.2rem;

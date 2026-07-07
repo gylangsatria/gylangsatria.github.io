@@ -1,6 +1,6 @@
 ---
 title: "Why I Use elementary OS: A Personal Take on Pantheon, Simplicity, and Productivity"
-date: 2025-07-07
+date: 2026-07-07
 layout: post
 tags: [elementary-os]
 description: Why I keep coming back to elementary OS — from its beautiful Pantheon desktop to its lightweight performance on older hardware.

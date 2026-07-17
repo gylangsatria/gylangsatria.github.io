@@ -18,6 +18,8 @@ A personal blog documenting experiments, breakdowns, and lessons learned the har
 - Syntax highlighting for multiple languages
 - Post navigation with previous/next links
 - Social sharing links
+- Giscus-powered comments section on every post with automatic theme sync
+- Dark/light theme sync between blog UI and giscus iframe
 
 ## Local Development
 

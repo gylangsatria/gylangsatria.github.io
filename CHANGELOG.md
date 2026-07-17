@@ -6,6 +6,14 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
+- Giscus comment widget integrated into post layout — allows visitors to leave comments and reactions via GitHub Discussions
+- Giscus category set to "Announcements" so only maintainers and giscus bot can create new discussion threads
+- Automatic theme sync between blog's manual dark/light toggle and giscus iframe via `postMessage`
+- CSS styling for `.giscus-wrapper` — consistent border, spacing, and responsive layout matching the blog design
+- `data-giscus-theme` attribute on `<html>` set by the theme toggle script in `default.html` for early theme detection
+
+### Added
+
 - Favicon (`/assets/favicon.ico`) integrated into blog layout via `<link>` tags in `head.html`
 - WinPoin latest posts section on homepage — fetches 6 latest articles from WinPoin via WordPress REST API and renders them as individual cards with thumbnail, title, excerpt, date, and source badge
 - `js/winpoin-posts.js` — client-side script to fetch and display WinPoin posts

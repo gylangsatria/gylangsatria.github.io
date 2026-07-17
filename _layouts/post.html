@@ -37,3 +37,60 @@ layout: default
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
+
+<div class="giscus-wrapper">
+  <h2>💬 Comments</h2>
+  <div
+    class="giscus"
+    id="giscus-comments"
+    data-repo="gylangsatria/gylangsatria.github.io"
+    data-repo-id="R_kgDONyWbew"
+    data-category="General"
+    data-category-id="DIC_kwDONyWbe84DBXAH"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="light"
+    data-lang="en"
+    crossorigin="anonymous"
+    data-loading="lazy"
+  ></div>
+</div>
+
+<script>
+  /**
+   * Sync giscus theme with blog's manual theme toggle.
+   * Uses data-giscus-theme attribute set by default.html's theme script.
+   */
+  (function () {
+    var giscusTheme =
+      document.documentElement.getAttribute("data-giscus-theme") || "light";
+
+    // Override the theme in the giscus div before client.js loads
+    var giscusEl = document.getElementById("giscus-comments");
+    if (giscusEl) giscusEl.setAttribute("data-theme", giscusTheme);
+
+    function updateGiscusTheme() {
+      var theme =
+        document.documentElement.getAttribute("data-theme") === "dark"
+          ? "dark"
+          : "light";
+      var frame = document.querySelector("iframe.giscus-frame");
+      if (frame) {
+        frame.contentWindow.postMessage(
+          { giscus: { setConfig: { theme: theme } } },
+          "https://giscus.app"
+        );
+      }
+    }
+
+    // Listen for theme toggle clicks (delegated)
+    document.addEventListener("click", function (e) {
+      if (e.target.closest(".theme-toggle")) {
+        setTimeout(updateGiscusTheme, 150);
+      }
+    });
+  })();
+</script>

@@ -1136,3 +1136,42 @@ article.post > .post-header {
     grid-template-columns: 1fr;
   }
 }
+
+/* ── Giscus / Comments section ── */
+.giscus-wrapper {
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.giscus-wrapper h2 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-strong);
+  margin: 0 0 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.giscus {
+  width: 100%;
+  min-height: 200px;
+}
+
+/* Giscus iframe gets proper background & border radius */
+.giscus-frame,
+.giscus-frame-wrapper,
+.giscus iframe {
+  width: 100% !important;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* Adjust spacing on mobile */
+@media (max-width: 768px) {
+  .giscus-wrapper {
+    margin-top: 1.8rem;
+    padding-top: 1.5rem;
+  }
+}

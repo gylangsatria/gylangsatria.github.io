@@ -191,6 +191,9 @@ layout: null
         var theme = storedTheme || (prefersDark ? "dark" : "light");
         applyTheme(theme);
 
+        // Store giscus theme for use by giscus script in post layout
+        root.setAttribute("data-giscus-theme", theme);
+
         document.querySelectorAll(".theme-toggle").forEach(function (btn) {
           btn.addEventListener("click", function () {
             var nextTheme =

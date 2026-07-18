@@ -2,7 +2,7 @@
 title: "Learning GitHub from Scratch: A Complete Beginner's Guide"
 date: 2026-07-01
 layout: post
-tags: [github, git, tutorial, beginners, version-control]
+tags: [github, tutorial]
 description: A complete beginner-friendly guide to learning Git and GitHub from zero — covering installation, basic commands, branches, and daily workflows.
 ---
 

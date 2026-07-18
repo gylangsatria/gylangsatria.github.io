@@ -2,7 +2,7 @@
 title: "Why I Built a YouTube Downloader with yt-dlp and Docker"
 date: 2026-07-07
 layout: post
-tags: [docker, yt-dlp, youtube-dl, open-source, automation, bash]
+tags: [yt-dlp, automation]
 description: The story behind why I built my own YouTube downloader tool — and why yt-dlp was the obvious choice.
 ---
 

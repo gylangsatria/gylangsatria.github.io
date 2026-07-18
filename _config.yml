@@ -3,7 +3,7 @@ theme: "minima"
 title: Gylang's Blog
 author: Gylang Satria
 description: A personal blog documenting experiments, breakdowns, and lessons learned the hard way.
-email: sayugiteam@gmail.com
+email: mail@gylang.my.id
 url: "https://blog.gylang.my.id"
 
 timezone: Etc/UTC # GitHub uses UTC. This is to force dev environment to match

@@ -149,6 +149,30 @@ layout: null
           btn.addEventListener("click", function () {
             var isOpen = nav.classList.toggle("open");
             btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+            // Toggle backdrop
+            var backdrop = document.querySelector(".nav-backdrop");
+            if (isOpen) {
+              if (!backdrop) {
+                backdrop = document.createElement("div");
+                backdrop.className = "nav-backdrop";
+                document.body.appendChild(backdrop);
+              }
+              backdrop.classList.add("open");
+            } else if (backdrop) {
+              backdrop.classList.remove("open");
+            }
+          });
+
+          // Close nav when clicking backdrop
+          document.addEventListener("click", function (e) {
+            if (
+              e.target.classList.contains("nav-backdrop") &&
+              nav.classList.contains("open")
+            ) {
+              nav.classList.remove("open");
+              btn.setAttribute("aria-expanded", "false");
+              e.target.classList.remove("open");
+            }
           });
         }
 

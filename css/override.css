@@ -954,6 +954,24 @@ article.post > .post-header {
   /* nav is absolutely positioned, no margin adjustment needed */
 }
 
+.nav-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(4px);
+  z-index: 55;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+}
+
+.nav-backdrop.open {
+  opacity: 1;
+  visibility: visible;
+}
+
 /* Very small screens */
 @media (max-width: 400px) {
   .site-header {

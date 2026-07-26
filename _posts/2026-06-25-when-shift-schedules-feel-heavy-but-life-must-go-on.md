@@ -2,7 +2,7 @@
 title: "When Shift Schedules Feel Heavy, But Life Must Go On"
 date: 2026-06-25
 layout: post
-tags: [personal, work]
+tags: [personal]
 description: Reflecting on the challenges of shift work, time away from family, and learning to adapt when life doesn't follow a normal schedule.
 ---
 

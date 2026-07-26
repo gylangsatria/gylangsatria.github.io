@@ -2,7 +2,7 @@
 title: "Welcome to My Personal Site"
 date: 2025-08-30
 layout: post
-tags: [personal, blog]
+tags: [blog]
 description: A curated space where I document what works, what breaks, and what I learn along the way.
 ---
 

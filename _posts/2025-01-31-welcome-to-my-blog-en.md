@@ -2,7 +2,7 @@
 title: "Welcome to My Blog"
 date: 2025-01-31
 layout: post
-tags: [personal, blog]
+tags: [blog]
 description: New blog, new place and new experience
 ---
 

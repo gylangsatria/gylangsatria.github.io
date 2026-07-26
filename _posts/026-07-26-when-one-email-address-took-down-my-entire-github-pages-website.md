@@ -2,7 +2,7 @@
 title: "When One Email Address Took Down My Entire GitHub Pages Website"
 date: 2026-07-26
 layout: post
-tags: [github, personal]
+tags: [github]
 description: A real experience of troubleshooting a GitHub Pages website that suddenly returned a 404 error, only to discover that the root cause was a flagged email address associated with a GitHub account.
 ---
 

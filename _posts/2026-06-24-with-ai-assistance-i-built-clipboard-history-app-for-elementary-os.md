@@ -2,7 +2,7 @@
 title: "With AI Assistance, I Successfully Built a Clipboard History App for elementary OS"
 date: 2026-06-24
 layout: post
-tags: [linux, elementary-os]
+tags: [elementary-os]
 description: How I built a native clipboard history app for elementary OS using Vala, GTK3, and Granite — with a little help from AI.
 ---
 

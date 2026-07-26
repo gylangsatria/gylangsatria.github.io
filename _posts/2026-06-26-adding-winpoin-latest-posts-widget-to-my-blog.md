@@ -2,7 +2,7 @@
 title: "Adding WinPoin Latest Posts Widget to My Blog"
 date: 2026-06-26
 layout: post
-tags: [winpoin, blog]
+tags: [winpoin]
 description: Why I added a widget to display the latest posts from WinPoin on my personal blog, and how it benefits both platforms.
 ---
 

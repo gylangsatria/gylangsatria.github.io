@@ -2,7 +2,7 @@
 title: "When Big Contributions Are Only Paid with 'Thank You'"
 date: 2026-07-17
 layout: post
-tags: [personal, work]
+tags: [personal]
 description: A reflection on why hard work and big contributions don't always get the recognition they deserve — and knowing when to move on.
 ---
 

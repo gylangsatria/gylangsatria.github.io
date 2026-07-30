@@ -2,7 +2,7 @@
 title: "Why I Sold Blog Sayugi"
 date: 2025-08-30
 layout: post
-tags: [blog]
+tags: [personal]
 description: Reflections on why I had to let go of Blog Sayugi.
 ---
 
